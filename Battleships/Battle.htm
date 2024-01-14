@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel=”icon” type=“image/x-icon” href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleships Game</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="main.js" defer type="module"></script>
+</head>
+<body>
+    <div id="setup-container">
+        <header> <a href="index.htm" class="home"><img src="Untitled-1.png" alt=""></a>SET UP YOUR SHIPS!</header>
+        <div id="setup-btns">
+            <div id="btn-container">
+                <p>Select your ship!</p>
+                <button data-ship-btn class="default-ship-btn">Destroyer</button>
+                <button data-ship-btn class="default-ship-btn">Submarine</button>
+                <button data-ship-btn class="default-ship-btn">Cruiser</button>
+                <button data-ship-btn class="default-ship-btn">Battleship</button>
+                <button data-ship-btn class="default-ship-btn">Carrier</button>
+                <hr>
+                <button data-remove-btn class="default-btns">Remove</button>
+                <button data-clear-btn class="default-btns">Clear</button>
+                <button data-rotate-btn class="default-btns">Rotate</button>
+            </div>
+        </div>
+
+    <div id="setup-middle">
+        <div id="setup-grid">
+            <button class="tile" data-tile>A1</button>
+            <button class="tile" data-tile>B1</button>
+            <button class="tile" data-tile>C1</button>
+            <button class="tile" data-tile>D1</button>
+            <button class="tile" data-tile>E1</button>
+            <button class="tile" data-tile>F1</button>
+            <button class="tile" data-tile>G1</button>
+            <button class="tile" data-tile>H1</button>
+            <button class="tile" data-tile>I1</button>
+            <button class="tile" data-tile>J1</button>
+            <button class="tile" data-tile>A2</button>
+            <button class="tile" data-tile>B2</button>
+            <button class="tile" data-tile>C2</button>
+            <button class="tile" data-tile>D2</button>
+            <button class="tile" data-tile>E2</button>
+            <button class="tile" data-tile>F2</button>
+            <button class="tile" data-tile>G2</button>
+            <button class="tile" data-tile>H2</button>
+            <button class="tile" data-tile>I2</button>
+            <button class="tile" data-tile>J2</button>
+            <button class="tile" data-tile>A3</button>
+            <button class="tile" data-tile>B3</button>
+            <button class="tile" data-tile>C3</button>
+            <button class="tile" data-tile>D3</button>
+            <button class="tile" data-tile>E3</button>
+            <button class="tile" data-tile>F3</button>
+            <button class="tile" data-tile>G3</button>
+            <button class="tile" data-tile>H3</button>
+            <button class="tile" data-tile>I3</button>
+            <button class="tile" data-tile>J3</button>
+            <button class="tile" data-tile>A4</button>
+            <button class="tile" data-tile>B4</button>
+            <button class="tile" data-tile>C4</button>
+            <button class="tile" data-tile>D4</button>
+            <button class="tile" data-tile>E4</button>
+            <button class="tile" data-tile>F4</button>
+            <button class="tile" data-tile>G4</button>
+            <button class="tile" data-tile>H4</button>
+            <button class="tile" data-tile>I4</button>
+            <button class="tile" data-tile>J4</button>
+            <button class="tile" data-tile>A5</button>
+            <button class="tile" data-tile>B5</button>
+            <button class="tile" data-tile>C5</button>
+            <button class="tile" data-tile>D5</button>
+            <button class="tile" data-tile>E5</button>
+            <button class="tile" data-tile>F5</button>
+            <button class="tile" data-tile>G5</button>
+            <button class="tile" data-tile>H5</button>
+            <button class="tile" data-tile>I5</button>
+            <button class="tile" data-tile>J5</button>
+            <button class="tile" data-tile>A6</button>
+            <button class="tile" data-tile>B6</button>
+            <button class="tile" data-tile>C6</button>
+            <button class="tile" data-tile>D6</button>
+            <button class="tile" data-tile>E6</button>
+            <button class="tile" data-tile>F6</button>
+            <button class="tile" data-tile>G6</button>
+            <button class="tile" data-tile>H6</button>
+            <button class="tile" data-tile>I6</button>
+            <button class="tile" data-tile>J6</button>
+            <button class="tile" data-tile>A7</button>
+            <button class="tile" data-tile>B7</button>
+            <button class="tile" data-tile>C7</button>
+            <button class="tile" data-tile>D7</button>
+            <button class="tile" data-tile>E7</button>
+            <button class="tile" data-tile>F7</button>
+            <button class="tile" data-tile>G7</button>
+            <button class="tile" data-tile>H7</button>
+            <button class="tile" data-tile>I7</button>
+            <button class="tile" data-tile>J7</button>
+            <button class="tile" data-tile>A8</button>
+            <button class="tile" data-tile>B8</button>
+            <button class="tile" data-tile>C8</button>
+            <button class="tile" data-tile>D8</button>
+            <button class="tile" data-tile>E8</button>
+            <button class="tile" data-tile>F8</button>
+            <button class="tile" data-tile>G8</button>
+            <button class="tile" data-tile>H8</button>
+            <button class="tile" data-tile>I8</button>
+            <button class="tile" data-tile>J8</button>
+            <button class="tile" data-tile>A9</button>
+            <button class="tile" data-tile>B9</button>
+            <button class="tile" data-tile>C9</button>
+            <button class="tile" data-tile>D9</button>
+            <button class="tile" data-tile>E9</button>
+            <button class="tile" data-tile>F9</button>
+            <button class="tile" data-tile>G9</button>
+            <button class="tile" data-tile>H9</button>
+            <button class="tile" data-tile>I9</button>
+            <button class="tile" data-tile>J9</button>
+            <button class="tile" data-tile>A10</button>
+            <button class="tile" data-tile>B10</button>
+            <button class="tile" data-tile>C10</button>
+            <button class="tile" data-tile>D10</button>
+            <button class="tile" data-tile>E10</button>
+            <button class="tile" data-tile>F10</button>
+            <button class="tile" data-tile>G10</button>
+            <button class="tile" data-tile>H10</button>
+            <button class="tile" data-tile>I10</button>
+            <button class="tile" data-tile>J10</button>
+        </div>
+        <button data-start-game-btn id='start-game-btn' class="default-start-btn">Start Game</button>
+    </div>
+
+    <div id="setup-right">
+        <div class="statistics">
+            <h3>Statistics</h3>
+            <p data-accuracy>Hit Accuracy: NA</p>
+            <p data-best-game>Best Game: NA</p>
+            <p data-win-percentage>Win Percentage: NA</p>
+            <p data-games-played>Games Played: NA</p>
+        </div>
+    </div>
+    </div>
+    
+    <div id="container" class="invisible">
+        <div id="header">
+            <a href="index.htm" class="home"><img src="Untitled-1.png" alt=""></a>
+            <p>BATTLESHIPS</p>
+        </div>
+        <div id="left">
+            <p>Player's ships</p>
+            <div id="left-grid">
+                <button class="tile" data-tile-left>A1</button>
+                <button class="tile" data-tile-left>B1</button>
+                <button class="tile" data-tile-left>C1</button>
+                <button class="tile" data-tile-left>D1</button>
+                <button class="tile" data-tile-left>E1</button>
+                <button class="tile" data-tile-left>F1</button>
+                <button class="tile" data-tile-left>G1</button>
+                <button class="tile" data-tile-left>H1</button>
+                <button class="tile" data-tile-left>I1</button>
+                <button class="tile" data-tile-left>J1</button>
+                <button class="tile" data-tile-left>A2</button>
+                <button class="tile" data-tile-left>B2</button>
+                <button class="tile" data-tile-left>C2</button>
+                <button class="tile" data-tile-left>D2</button>
+                <button class="tile" data-tile-left>E2</button>
+                <button class="tile" data-tile-left>F2</button>
+                <button class="tile" data-tile-left>G2</button>
+                <button class="tile" data-tile-left>H2</button>
+                <button class="tile" data-tile-left>I2</button>
+                <button class="tile" data-tile-left>J2</button>
+                <button class="tile" data-tile-left>A3</button>
+                <button class="tile" data-tile-left>B3</button>
+                <button class="tile" data-tile-left>C3</button>
+                <button class="tile" data-tile-left>D3</button>
+                <button class="tile" data-tile-left>E3</button>
+                <button class="tile" data-tile-left>F3</button>
+                <button class="tile" data-tile-left>G3</button>
+                <button class="tile" data-tile-left>H3</button>
+                <button class="tile" data-tile-left>I3</button>
+                <button class="tile" data-tile-left>J3</button>
+                <button class="tile" data-tile-left>A4</button>
+                <button class="tile" data-tile-left>B4</button>
+                <button class="tile" data-tile-left>C4</button>
+                <button class="tile" data-tile-left>D4</button>
+                <button class="tile" data-tile-left>E4</button>
+                <button class="tile" data-tile-left>F4</button>
+                <button class="tile" data-tile-left>G4</button>
+                <button class="tile" data-tile-left>H4</button>
+                <button class="tile" data-tile-left>I4</button>
+                <button class="tile" data-tile-left>J4</button>
+                <button class="tile" data-tile-left>A5</button>
+                <button class="tile" data-tile-left>B5</button>
+                <button class="tile" data-tile-left>C5</button>
+                <button class="tile" data-tile-left>D5</button>
+                <button class="tile" data-tile-left>E5</button>
+                <button class="tile" data-tile-left>F5</button>
+                <button class="tile" data-tile-left>G5</button>
+                <button class="tile" data-tile-left>H5</button>
+                <button class="tile" data-tile-left>I5</button>
+                <button class="tile" data-tile-left>J5</button>
+                <button class="tile" data-tile-left>A6</button>
+                <button class="tile" data-tile-left>B6</button>
+                <button class="tile" data-tile-left>C6</button>
+                <button class="tile" data-tile-left>D6</button>
+                <button class="tile" data-tile-left>E6</button>
+                <button class="tile" data-tile-left>F6</button>
+                <button class="tile" data-tile-left>G6</button>
+                <button class="tile" data-tile-left>H6</button>
+                <button class="tile" data-tile-left>I6</button>
+                <button class="tile" data-tile-left>J6</button>
+                <button class="tile" data-tile-left>A7</button>
+                <button class="tile" data-tile-left>B7</button>
+                <button class="tile" data-tile-left>C7</button>
+                <button class="tile" data-tile-left>D7</button>
+                <button class="tile" data-tile-left>E7</button>
+                <button class="tile" data-tile-left>F7</button>
+                <button class="tile" data-tile-left>G7</button>
+                <button class="tile" data-tile-left>H7</button>
+                <button class="tile" data-tile-left>I7</button>
+                <button class="tile" data-tile-left>J7</button>
+                <button class="tile" data-tile-left>A8</button>
+                <button class="tile" data-tile-left>B8</button>
+                <button class="tile" data-tile-left>C8</button>
+                <button class="tile" data-tile-left>D8</button>
+                <button class="tile" data-tile-left>E8</button>
+                <button class="tile" data-tile-left>F8</button>
+                <button class="tile" data-tile-left>G8</button>
+                <button class="tile" data-tile-left>H8</button>
+                <button class="tile" data-tile-left>I8</button>
+                <button class="tile" data-tile-left>J8</button>
+                <button class="tile" data-tile-left>A9</button>
+                <button class="tile" data-tile-left>B9</button>
+                <button class="tile" data-tile-left>C9</button>
+                <button class="tile" data-tile-left>D9</button>
+                <button class="tile" data-tile-left>E9</button>
+                <button class="tile" data-tile-left>F9</button>
+                <button class="tile" data-tile-left>G9</button>
+                <button class="tile" data-tile-left>H9</button>
+                <button class="tile" data-tile-left>I9</button>
+                <button class="tile" data-tile-left>J9</button>
+                <button class="tile" data-tile-left>A10</button>
+                <button class="tile" data-tile-left>B10</button>
+                <button class="tile" data-tile-left>C10</button>
+                <button class="tile" data-tile-left>D10</button>
+                <button class="tile" data-tile-left>E10</button>
+                <button class="tile" data-tile-left>F10</button>
+                <button class="tile" data-tile-left>G10</button>
+                <button class="tile" data-tile-left>H10</button>
+                <button class="tile" data-tile-left>I10</button>
+                <button class="tile" data-tile-left>J10</button>
+            </div>
+        </div>
+        <div id="middle" class="invisible">
+            <p id="message"></p>
+            <div id='popup' class="invisible">
+                <p data-win-text></p>
+                <a href="Battle.htm" data-new-game>New Game</a>
+            </div>
+        </div>
+        <div id="waiting" class="invisible"></div>
+        <div id="right">
+            <p>Opponent's ships</p>
+            <div id="right-grid">
+                <button class="tile" data-tile-right>A1</button>
+                <button class="tile" data-tile-right>B1</button>
+                <button class="tile" data-tile-right>C1</button>
+                <button class="tile" data-tile-right>D1</button>
+                <button class="tile" data-tile-right>E1</button>
+                <button class="tile" data-tile-right>F1</button>
+                <button class="tile" data-tile-right>G1</button>
+                <button class="tile" data-tile-right>H1</button>
+                <button class="tile" data-tile-right>I1</button>
+                <button class="tile" data-tile-right>J1</button>
+                <button class="tile" data-tile-right>A2</button>
+                <button class="tile" data-tile-right>B2</button>
+                <button class="tile" data-tile-right>C2</button>
+                <button class="tile" data-tile-right>D2</button>
+                <button class="tile" data-tile-right>E2</button>
+                <button class="tile" data-tile-right>F2</button>
+                <button class="tile" data-tile-right>G2</button>
+                <button class="tile" data-tile-right>H2</button>
+                <button class="tile" data-tile-right>I2</button>
+                <button class="tile" data-tile-right>J2</button>
+                <button class="tile" data-tile-right>A3</button>
+                <button class="tile" data-tile-right>B3</button>
+                <button class="tile" data-tile-right>C3</button>
+                <button class="tile" data-tile-right>D3</button>
+                <button class="tile" data-tile-right>E3</button>
+                <button class="tile" data-tile-right>F3</button>
+                <button class="tile" data-tile-right>G3</button>
+                <button class="tile" data-tile-right>H3</button>
+                <button class="tile" data-tile-right>I3</button>
+                <button class="tile" data-tile-right>J3</button>
+                <button class="tile" data-tile-right>A4</button>
+                <button class="tile" data-tile-right>B4</button>
+                <button class="tile" data-tile-right>C4</button>
+                <button class="tile" data-tile-right>D4</button>
+                <button class="tile" data-tile-right>E4</button>
+                <button class="tile" data-tile-right>F4</button>
+                <button class="tile" data-tile-right>G4</button>
+                <button class="tile" data-tile-right>H4</button>
+                <button class="tile" data-tile-right>I4</button>
+                <button class="tile" data-tile-right>J4</button>
+                <button class="tile" data-tile-right>A5</button>
+                <button class="tile" data-tile-right>B5</button>
+                <button class="tile" data-tile-right>C5</button>
+                <button class="tile" data-tile-right>D5</button>
+                <button class="tile" data-tile-right>E5</button>
+                <button class="tile" data-tile-right>F5</button>
+                <button class="tile" data-tile-right>G5</button>
+                <button class="tile" data-tile-right>H5</button>
+                <button class="tile" data-tile-right>I5</button>
+                <button class="tile" data-tile-right>J5</button>
+                <button class="tile" data-tile-right>A6</button>
+                <button class="tile" data-tile-right>B6</button>
+                <button class="tile" data-tile-right>C6</button>
+                <button class="tile" data-tile-right>D6</button>
+                <button class="tile" data-tile-right>E6</button>
+                <button class="tile" data-tile-right>F6</button>
+                <button class="tile" data-tile-right>G6</button>
+                <button class="tile" data-tile-right>H6</button>
+                <button class="tile" data-tile-right>I6</button>
+                <button class="tile" data-tile-right>J6</button>
+                <button class="tile" data-tile-right>A7</button>
+                <button class="tile" data-tile-right>B7</button>
+                <button class="tile" data-tile-right>C7</button>
+                <button class="tile" data-tile-right>D7</button>
+                <button class="tile" data-tile-right>E7</button>
+                <button class="tile" data-tile-right>F7</button>
+                <button class="tile" data-tile-right>G7</button>
+                <button class="tile" data-tile-right>H7</button>
+                <button class="tile" data-tile-right>I7</button>
+                <button class="tile" data-tile-right>J7</button>
+                <button class="tile" data-tile-right>A8</button>
+                <button class="tile" data-tile-right>B8</button>
+                <button class="tile" data-tile-right>C8</button>
+                <button class="tile" data-tile-right>D8</button>
+                <button class="tile" data-tile-right>E8</button>
+                <button class="tile" data-tile-right>F8</button>
+                <button class="tile" data-tile-right>G8</button>
+                <button class="tile" data-tile-right>H8</button>
+                <button class="tile" data-tile-right>I8</button>
+                <button class="tile" data-tile-right>J8</button>
+                <button class="tile" data-tile-right>A9</button>
+                <button class="tile" data-tile-right>B9</button>
+                <button class="tile" data-tile-right>C9</button>
+                <button class="tile" data-tile-right>D9</button>
+                <button class="tile" data-tile-right>E9</button>
+                <button class="tile" data-tile-right>F9</button>
+                <button class="tile" data-tile-right>G9</button>
+                <button class="tile" data-tile-right>H9</button>
+                <button class="tile" data-tile-right>I9</button>
+                <button class="tile" data-tile-right>J9</button>
+                <button class="tile" data-tile-right>A10</button>
+                <button class="tile" data-tile-right>B10</button>
+                <button class="tile" data-tile-right>C10</button>
+                <button class="tile" data-tile-right>D10</button>
+                <button class="tile" data-tile-right>E10</button>
+                <button class="tile" data-tile-right>F10</button>
+                <button class="tile" data-tile-right>G10</button>
+                <button class="tile" data-tile-right>H10</button>
+                <button class="tile" data-tile-right>I10</button>
+                <button class="tile" data-tile-right>J10</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

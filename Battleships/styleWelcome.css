@@ -1,0 +1,94 @@
+/* reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+/* global styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* header styles */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 30px;
+}
+/* main styles */
+main {
+  padding: 50px 0;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.instructions {
+  margin: 50px auto;
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.instructions h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.instructions ol {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
+.instructions li {
+  margin-bottom: 10px;
+}
+/* Style for the "Play Now" button */
+.play-btn {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.play-btn:hover {
+  background-color: #3e8e41;
+}
+
+.svg{
+    z-index: -1;
+    position: relative;
+    height: 25vh;
+    width: 100vw;
+}
